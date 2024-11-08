@@ -15,6 +15,10 @@ body {
    border-bottom: solid black 1px;
    gap: 10px;
    align-items: center;
+   position: sticky;
+   top: 0%;
+   background-color: white;
+   z-index:1;
 }
 
 .navbar__s1__title {
@@ -41,7 +45,25 @@ body {
 .navbar__s2 input:focus {
    outline: none;
 }
-
+.my-learning{
+   position: relative;
+}
+.my-learning__popup{
+   border: solid black 1px;
+   height:60px;
+   width:100px;
+   padding: 10%;
+   border-radius: 10px;
+   background-color: #A435f0;
+   color: aliceblue;
+   position: absolute;
+   top: 30px;
+   right: 0px;
+   display: none;
+}
+.my-learning:hover .my-learning__popup{
+   display: inline;
+}
 .navbar__s3 {
    display: flex;
    gap: 5px;
